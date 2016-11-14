@@ -1,6 +1,7 @@
 {
-  "name": "astral",
-  "version": "0.0.0",
+  "name": "website",
+  "description": "Website quentindesrame.com",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,5 +14,12 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
+  },
+  "authors": [
+    { "name": "quen2404", "email": "quen2404@gmail.com", "url": "https://www.quentindesrame.com" }
+  ],
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/quen2404/website.git"
   }
 }
