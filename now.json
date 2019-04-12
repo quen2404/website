@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "qdesrame-website",
+  "alias": ["qdesrame.dev", "www.qdesrame.dev"],
   "builds": [
     {
       "src": "package.json",
