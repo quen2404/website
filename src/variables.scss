@@ -1,0 +1,51 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+$brand: #6574CD;
+$brand-invert: findColorInvert($brand);
+
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+$stackoverflow: #f48024;
+$stackoverflow-invert: findColorInvert($stackoverflow);
+
+$primary: $brand;
+$primary-invert: $brand-invert;
+
+$menu-item-active-color: $primary-invert;
+$menu-item-active-background-color: $primary;
+
+$pagination-current-color: $primary-invert;
+$pagination-current-background-color: $primary;
+$pagination-current-border-color: $primary;
+
+$tabs-link-active-color: $brand;
+$tabs-link-active-border-bottom-color: $brand;
+
+// 5. Add new color variables to the color map.
+@import '~bulma/sass/utilities/derived-variables.sass';
+$addColors: (
+  'twitter': (
+    $twitter,
+    $twitter-invert,
+  ),
+  'linkedin': (
+    $linkedin,
+    $linkedin-invert,
+  ),
+  'github': (
+    $github,
+    $github-invert,
+  ),
+  'stackoverflow': (
+    $stackoverflow,
+    $stackoverflow-invert,
+  )
+);
+$colors: map-merge($colors, $addColors);
+
+$footer-padding: 3rem 1.5rem 3rem;
