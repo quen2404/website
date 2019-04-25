@@ -6,12 +6,16 @@ import {AppComponent} from './app.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { SkillsComponent } from './skills/skills.component';
 import { HomeComponent } from './home/home.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { SocialNetworkIconsComponent } from './social-network-icons/social-network-icons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillsComponent,
-    HomeComponent
+    HomeComponent,
+    AboutMeComponent,
+    SocialNetworkIconsComponent
   ],
   imports: [
     BrowserModule,

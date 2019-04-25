@@ -22,6 +22,10 @@ export class AppComponent {
       name: 'Skills',
       path: 'skills',
     },
+    {
+      name: 'About me',
+      path: 'about-me'
+    }
   ];
 
   toggleMenu() {

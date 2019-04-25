@@ -6,6 +6,8 @@
            height="28">
     </a>
     -->
+    <app-social-network-icons class="navbar-item" [classes]="['is-hidden-desktop']"></app-social-network-icons>
+
     <div class="navbar-burger burger" (click)="toggleMenu()" [class.is-active]="isMenuOpened">
       <span></span>
       <span></span>
@@ -51,37 +53,12 @@
     </div>
 
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-twitter" target="_blank"
-             href="https://twitter.com/qdesrame">
-            <fa-icon class="icon" [icon]="faTwitter"></fa-icon>
-            <span>
-                Twitter
-              </span>
-          </a>
-          <a class="button is-linkedin" target="_blank"
-             href="https://linkedin.com/in/quentin-desrame">
-            <fa-icon class="icon" [icon]="faLinkedin"></fa-icon>
-            <span>
-                Linkedin
-              </span>
-          </a>
-          <a class="button is-github" target="_blank" href="https://github.com/quen2404">
-            <fa-icon class="icon" [icon]="faGithub"></fa-icon>
-            <span>Github</span>
-          </a>
-          <a class="button is-stackoverflow" target="_blank" href="https://stackoverflow.com/users/6262650/quen2404">
-            <fa-icon class="icon" [icon]="faStackOverflow"></fa-icon>
-            <span>Stack Overflow</span>
-          </a>
-        </div>
-      </div>
+      <app-social-network-icons class="navbar-end" [classes]="['is-hidden-touch', 'is-hidden-desktop-only']"></app-social-network-icons>
     </div>
   </div>
 </nav>
 <section class="main">
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </section>
 <footer class="footer">
   <div class="content has-text-centered">
