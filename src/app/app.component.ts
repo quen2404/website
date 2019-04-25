@@ -7,9 +7,35 @@ import {faGithub, faLinkedin, faStackOverflow, faTwitter} from '@fortawesome/fre
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hello world';
   faTwitter = faTwitter;
   faLinkedin = faLinkedin;
   faGithub = faGithub;
   faStackOverflow = faStackOverflow;
+
+  isMenuOpened = false;
+  routes: AppRouteItem[] = [
+    {
+      name: 'Home',
+      path: '',
+    },
+    {
+      name: 'Skills',
+      path: 'skills',
+    },
+  ];
+
+  toggleMenu() {
+    this.isMenuOpened = !this.isMenuOpened;
+  }
+
+  closeMenu() {
+    this.isMenuOpened = false;
+  }
+
+
+}
+
+interface AppRouteItem {
+  name: string;
+  path: string;
 }
